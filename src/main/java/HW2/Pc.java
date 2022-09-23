@@ -11,10 +11,15 @@ public class Pc {
         this.myMonitor = myMonitor;
     }
     private String  drawLOgo(){
+        myMonitor.drawPixel(7,8,"blue");
         return "";
     }
     public String description(){
-        System.out.println("Welcome to worst buy below is the description of the pc on sale today ");
+        System.out.println("Welcome to worst buy below is the description of the pc on sale today " + myCase +" "+ myMonitor + " " + myMotherboard);
         return null;
+    }
+    public String powerUp(){
+        //Pc.drawLOgo()+ myMotherboard.loadProgram(" program name");
+        return "";
     }
 }
