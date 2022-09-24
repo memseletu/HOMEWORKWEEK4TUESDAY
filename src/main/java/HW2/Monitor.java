@@ -5,7 +5,7 @@ public class Monitor {
   private String model;
   private String manufacturer;
     public void drawPixel(int x,int y,String color){
-        System.out.println("Drawing pixel at" + x + y + ""+ "in color"+ color);
+        System.out.println("Drawing pixel at " + x +" "+ y + " "+ "in color "+ color);
 
     }
 }

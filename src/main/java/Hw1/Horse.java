@@ -7,6 +7,7 @@ public class Horse extends Vehicle implements RideAble {
         super(name, qty, price, speed);
     }
 
+
     @Override
     public void totalAfterTax(Vehicle vehicle) {
 
@@ -15,6 +16,6 @@ public class Horse extends Vehicle implements RideAble {
 
     @Override
     public int milesPerHour() {
-        return 0;
+        return (int) getSpeed();
     }
 }

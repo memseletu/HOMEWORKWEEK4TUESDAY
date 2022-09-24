@@ -6,8 +6,7 @@ public class Motherboard {
     private int ramSlots;
     private int cardSlots;
     private String bois;
-    public String loadProgram(String programName){
+    public void loadProgram(String programName){
         System.out.println("programName is now running" + programName);
-      return "";
     }
 }

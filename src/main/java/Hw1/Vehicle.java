@@ -5,7 +5,7 @@ public abstract class Vehicle extends Product {
 
 
     private int qty;
-    private static double price;
+    private  double price;
     private final double tax =0.15;
     private float speed;
     private Engine myEngine;
@@ -38,12 +38,12 @@ public abstract class Vehicle extends Product {
         this.qty = qty;
     }
 
-    public static double getPrice() {
+    public  double getPrice() {
         return price;
     }
 
-    public static void setPrice(double price) {
-        Vehicle.price = price;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public float getSpeed() {
@@ -54,6 +54,7 @@ public abstract class Vehicle extends Product {
         this.speed = speed;
     }
 
+
     public double totalBeforeTax(Vehicle vehicle){
       double total =0;
       total = price*qty;
@@ -63,6 +64,16 @@ public abstract class Vehicle extends Product {
       double taxprice = 0;
        taxprice= price*qty*tax;
         return taxprice;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "qty=" + qty +
+                ", tax=" + tax +
+                ", speed=" + speed +
+                ", myEngine=" + myEngine +
+                '}';
     }
 
     public abstract void totalAfterTax(Vehicle vehicle);

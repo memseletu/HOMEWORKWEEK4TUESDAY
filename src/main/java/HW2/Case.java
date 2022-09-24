@@ -28,9 +28,9 @@ public class Case {
     public void setDimensions(Dimensions dimensions) {
         this.dimensions = dimensions;
     }
-    public String pressPowerButton( String powerSupply){
-        System.out.println("this is my power button");
-        return "";
+    public void pressPowerButton( ){
+        System.out.println("PowerButton Pressed");
+
         //????? please ignore method above
     }
 }

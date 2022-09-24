@@ -1,7 +1,7 @@
 package Hw1;
 
 public class Product {
-    public static String name;
+    private String name;
 
     public Product(String name) {
         this.name = name;

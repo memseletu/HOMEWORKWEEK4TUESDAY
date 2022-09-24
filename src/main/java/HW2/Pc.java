@@ -14,12 +14,16 @@ public class Pc {
         myMonitor.drawPixel(7,8,"blue");
         return "";
     }
-    public String description(){
-        System.out.println("Welcome to worst buy below is the description of the pc on sale today " + myCase +" "+ myMonitor + " " + myMotherboard);
-        return null;
+    public void description(){
+        System.out.println("Welcome to worst buy below is the description of the pc on sale today " +
+                myCase.getDimensions()+ " "+myCase.getManufacturer()+" "+myCase.getPowerSupply()
+                +" "+ myMonitor + " " + myMotherboard);
+
     }
-    public String powerUp(){
-        //Pc.drawLOgo()+ myMotherboard.loadProgram(" program name");
-        return "";
+    public void powerUp(){
+       myCase.pressPowerButton();
+       drawLOgo();
+       myMotherboard.loadProgram(" program name");
+
     }
 }
